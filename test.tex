@@ -1,0 +1,21 @@
+
+
+\subsection{TEST}
+\newcommand{\continue}[2]{
+% defines the new command if it does not exist already
+\providecommand{\num}{1}\renewcommand{\num}{1}#2#1\renewcommand{\num}{2}#2#1\renewcommand{\num}{{...}}... #1\renewcommand{\num}{{n-1}}#2#1\renewcommand{\num}{{n}}#2
+}
+
+\continue{+}{$\frac{1}{\num}$}
+
+\continue{$\cdot$}{$t^\num$}
+
+\continue{;}{Hallo \num}
+
+\continue{+}{Hallo \num}
+
+%\continue{$\varphi_{i \cdot \num} + t^{2\cdot \num+1}$}
+
+%\continue{$2 + \num + 12$}
+
+%$\sum_{i=1}^{n} \frac{1}{i} =$\continue{$\frac{1}{\num}$}

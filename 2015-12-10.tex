@@ -14,15 +14,18 @@ $\int_{0}^{x} \frac{t^3}{e^{(t^2)}} dt $
 $=\int_{0}^{x} t^3 \cdot e^{-t^2} dt $
 $=\int_{0}^{x} \frac{1}{2} t^2 \cdot e^{-t^2} \cdot 2t dt$
 \profnote{Substitutionsregel: $\int_{a}^{b} f(\varphi(x)) \varphi'(x) dx = \int_{\varphi(a)}^{\varphi(b)} f(x) dx$}
+
 $\underbrace{=}_{\textrm{Subst. } s=t^2} \int_{0}^{x^2} \frac{1}{2} s \cdot e^{-s} ds$
 $=\frac{1}{2} \int_{0}^{x^2} \underbrace{s}_{f}\cdot \underbrace{e^{-s}}_{g'} ds$
 \profnote{NR: $f(s) = s, f'(s)=1, g(s)=-e^{-s}, g'(s)=e^{-s}$}
+
 $\underbrace{=}_{\textrm{Produktregel}} \frac{1}{2} (\sbr{-s e^{-s}}_0^{x^2} - \int_{0}^{x^2} - e^{-s} ds)$
 $=\frac{1}{2} (-x^2 \cdot e^{-x^2} - (e^{-x^2} - 1) )$
 $=\frac{1}{2} (-x^2 \cdot e^{-x^2} - e^{-x^2} + 1))$
 $=-\frac{1}{2} e^{-x^2} (x^2+1) + \frac{1}{2}$
 
 Das ausgerechnete Integral setzen wir jetzt ein: 
+
 $\Rightarrow \psi(x) = e^{x^2} \cdot \rbr{-\frac{1}{2} e^{-x^2} (x^2+1) + \frac{1}{2}}$
 $=e^{x^2} (c+\frac{1}{2}) - \frac{1}{2} (x^2 + 1)$
 

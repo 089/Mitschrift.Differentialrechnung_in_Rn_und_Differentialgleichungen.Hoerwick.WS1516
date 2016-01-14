@@ -17,12 +17,25 @@ $ \dot{x}(t) = \frac{dx}{dt}, \dot{y}(t) = \frac{dy}{dt} $. Der Ableitungsvektor
 \subsection{Beispiele}
 \paragraph{1.} $ f(t) = \vektor{ t^3 + t\\ 2t\\t^2}, f'(t)= \vektor{ 3t^2 + 1\\2\\2t}$
 \paragraph{2. Kreis} 
-$ f(t) = \vektor{ R \cos(t)\\ R\sin (t)}, $
-$f'(t) = \vektor{ - R \sin(t)\\ R \cos(t)}$\\
-$R=1: f(t) = \vektor{ \cos(t)\\ \sin (t)} $
-$f'(1) = \vektor{ - \sin(t)\\ \cos(t)}$ \\
-$\abs{f'(t)} = \sqrt{\sin^2 (t) + \cos^2(t)}=1 $\\
-Skalarprodukt: 
+$ f(t) = \vektor{ R \cos t\\ R\sin t}, $
+$f'(t) = \vektor{ - R \sin t\\ R \cos t}$\\
+$R=1: f(t) = \vektor{ \cos t \\ \sin t} $
+$f'(t) = \vektor{ - \sin t \\ \cos t}$ \\
+
+\textbf{Aus der Formelsammlung: }\profnote{Für das Skalarprodukt wird üblicherweise $\circ$ oder $\cdot$ verwendet.}
+\begin{enumerate}
+\item $\sin^2 t + \cos^2 t =1$ 
+\item $\abs{\vec{a}} = \sqrt{\vec{a} \circ \vec{a}}$
+\end{enumerate}
+
+$ \abs{f'(t)} 
+= \sqrt{f'(t) \circ f'(t)}
+= \sqrt{\vektor{ - \sin t \\ \cos t } \circ \vektor{ - \sin t\\ \cos t}}
+= \sqrt{ (-\sin t) \cdot (-\sin t) + \cos t \cdot \cos t }
+= \sqrt{\sin^2 t + \cos^2 t }=1 
+$\\
+
+\textbf{Skalarprodukt: }
 $\vektor{ \cos t\\\sin t} \cdot \vektor{ -\sin t\\ cos t} $
 $= -\cos t \sin t + \sin t \cos t = 0 \Rightarrow 90^\circ $.
 \includegraphicsdeluxe{geschwindigkeitsvektor_kreis.jpg}{Geschwindigkeitsvektor im Kreis}{Geschwindigkeitsvektor im Kreis}{fig:geschwindigkeitsvektor2}

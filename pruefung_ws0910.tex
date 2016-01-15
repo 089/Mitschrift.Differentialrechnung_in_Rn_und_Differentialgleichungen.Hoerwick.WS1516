@@ -79,3 +79,58 @@ $e > \ln x$
 
 \subsection{zu 5)}
 Eine ähnliche Aufgabe haben wir bereits gerechnet. 
+
+\subsection{zu 6)}
+% 1 \includegraphicsdeluxe{.jpg}{}{}{fig:}
+Koordinaten von P im Hilfskoordinatensystem, dem u,v-System: 
+
+$ \vektor{u\\v} = \underbrace{\vektor{\sin \varphi\\2 - \cos \varphi}}_{\textrm{um } \varphi \textrm{ drehen.}} $
+
+$ \vektor{\cos \varphi, -\sin \varphi\\\sin \varphi, \cos \varphi} \vektor{\sin \varphi\\2-\cos \varphi} $
+$=\vektor{\cos \varphi \sin \varphi - 2 \sin \varphi + \sin \varphi \cos \varphi\\\sin \varphi \sin \varphi + 2 \cos \varphi - \cos \varphi \cos \varphi } $
+
+\section{Aufgaben und Wiederholungen}
+
+\subsection{Zykloide}
+Es wird auf Kapitel \ref{sec:die_zykloide} (Seite \pageref{sec:die_zykloide}) und Abb. \ref{fig:zykloid1} verwiesen. Weiterhin wird auf das s-t-Hilfskoordinatensystem und die dortigen Formeln für $ s(\varphi), x(\varphi) $ und $ y(\varphi) \Rightarrow f(\varphi) $ im selben Kapitel hingewiesen. 
+
+\subsection{Linienintegral 1. Art}
+Kurve im $\R^2, K(t)$
+
+Funktion F: $\R^2 -> \R$
+
+Die Skizze Abb. \ref{fig:LinInt1} auf Seite \pageref{fig:LinInt1} wird und das Integral $\int_{a}^{b} F(K(t)) \cdot \abs{K'(t)} dt$ wiederholt:
+
+$ K(t) = \vektor{t\\t^2}, t=0 bis t = 2 $
+
+$ F(x,y) = x\cdot y $
+
+$ K'(t) = \vektor{1\\2t} $
+
+$ \abs{K'(t)} = \sqrt{1 + 4 t^2} $
+
+$ \int_{a}^{b} F(K(t)) \cdot \abs{K'(t)} dt 
+= \int_0^2 F\vektor{t\\t^2} \cdot \sqrt{1 + 4t^2} dt
+= \int_{0}^{2} t^3 \cdot \sqrt{1 + 4t^2} dt
+= ?
+$\profnote{Da, also bei ? hören wir auf. In der Prüfung käme im Fall der Fälle ein Integral vor, dessen Stammfunktion nicht zu schwer ist. Oder man muss es nur bis hier hin ausrechnen.}
+
+\subsection{Linienintegral 2. Art (Arbeitsintegral)}
+Auf Kapitel \ref{sec:linienintegral_arbeitsintegral} auf Seite \pageref{sec:linienintegral_arbeitsintegral} wird verwiesen. 
+
+Formel für die Arbeit: $\int_{a}^{b} F(K(t)) \cdot K'(t) dt$ (Arbeitsintegral) 
+
+\paragraph{Beispiel}
+$ K(t) = \vektor{t\\2t}$ von $t=0$ bis $t=\pi$
+
+Kraftfeld: $F\vektor{x\\y} = \vektor{\sin x\\\cos x}$
+
+\profnote{Cave: Skalarprodukt!}
+$ \int_{0}^{\pi} F\vektor{t\\2t} \cdot \vektor{1\\2} dt
+=\int_{0}^{\pi} \vektor{\sin t\\\cos 2t} \cdot \vektor{1\\2} dt
+=\int_{0}^{\pi} \sin t + 2\cos 2t dt 
+= \sbr{-\cos t + \sin 2t}_{0}^{\pi}
+= (-\cos \pi + \sin 2\pi) - (-\cos 0 + \sin 0)
+= (1+0)-(-1+0)
+= 2 
+$ 

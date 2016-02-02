@@ -1,18 +1,18 @@
 % Vorlesung vom 08.10.2015
 \renewcommand{\ldate}{2015-10-08}
 
-\subsection{Definition}
+\subsection{Definition Gradient}
 Wiederholung Richtungsableitung: $ f_v(x)=\lim\limits_{h\rightarrow 0} \frac{f(x+h\cdot v) - f(x)}{h}$
 \begin{defi}
 $ f: \R^n \rightarrow R $\\
-Der Vektor ($ \frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, ..., \frac{\delta f}{\delta x_n} $) heißt der Gradient von f bei x.
+Der Vektor $ \rbr{\frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, ..., \frac{\delta f}{\delta x_n} }$ heißt der Gradient von f bei x.
 \end{defi}
 
 \begin{satz}
 $ f: \R^n \rightarrow \R $\\
-$ v = (v_1, ..., v_n) \textrm{mit} |v|=1 $
+$ v = (v_1, ..., v_n) \textrm{ mit } |v|=1. $
 Dann gilt: $ f_v(x_1, ..., x_n) = (v_1, ..., v_n) \cdot \frac{\delta f}{\delta x_1}, \frac{\delta f}{\delta x_2}, ..., \frac{\delta f}{\delta x_n} $\\
-$ f_v(x) = v \cdot \textrm{Gradient von f} (\widehat{=} \textrm{ Skalarprodukt: } (x_1,x_2)\cdot (y_1,y_2)=x_1y_1+x_2+y_2) $ 
+$ f_v(x) = v \cdot \textrm{Gradient von f } (\widehat{=} \textrm{ Skalarprodukt: } (x_1,x_2)\cdot (y_1,y_2)=x_1y_1+x_2+y_2) $ 
 \end{satz}
 
 % \profnote{Jetzt machen wir einen Beweis. Wenn man den schlampig macht, geht's recht schnell. Wir machens schlampig.}

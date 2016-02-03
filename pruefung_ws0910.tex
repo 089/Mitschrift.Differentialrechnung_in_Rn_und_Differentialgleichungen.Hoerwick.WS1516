@@ -18,14 +18,14 @@ $ f: \R^2 \rightarrow \R^2, \vektor{x\\y} \rightarrow \vektor{2xy\\y^2} $ und $ 
 
 $ (g\circ f)'(x) = g'(f(x)) \cdot f'(x) $
 
-$ f'\vektor{x\\y} = \vektor{2y, 2x\\0, 2y} $
+$ f'\vektor{x\\y} = \vektor{2y & 2x\\0 & 2y} $
 
-$ g'\vektor{x\\y} = \vektor{1, 1\\y, x\\2x, 0} $
+$ g'\vektor{x\\y} = \vektor{1 & 1\\y & x\\2x & 0} $
 
 $ (g\circ f)'\vektor{x\\y} = g' \rbr{f\vektor{x\\y}} \cdot f'\vektor{x\\y} 
 = g'\vektor{2xy\\y^2} \cdot f'\vektor{x\\y}
-= \vektor{1, 1\\y^2, 2xy\\4xy, 0} \cdot f'\vektor{2y, 2x\\0, 2y}
-= \vektor{2y, 2x + 2y\\2y^3, 2xy^2 + 4xy^2\\8xy^2, 8x^2y, 0}
+= \vektor{1 & 1\\y^2 & 2xy\\4xy & 0} \cdot f'\vektor{2y & 2x\\0 & 2y}
+= \vektor{2y & 2x + 2y\\2y^3 & 2xy^2 + 4xy^2\\8xy^2 & 8x^2y & 0}
 $
 
 Kontrolle: Berechne $ g\circ f$, dann ableiten. 
@@ -82,12 +82,12 @@ Eine ähnliche Aufgabe haben wir bereits gerechnet.
 
 \subsection{zu 6)}
 \renewcommand{\ldate}{2016-01-16}
-\includegraphicsdeluxe{DrehPhi6.jpg}{Drehen}{Drehmatrix: $ \vektor{\cos \varphi, -\sin \varphi\\\sin \varphi, \cos \varphi} $}{fig:DrehPhi6}
+\includegraphicsdeluxe{DrehPhi6.jpg}{Drehen}{Drehmatrix: $ \vektor{\cos \varphi & -\sin \varphi\\\sin \varphi & \cos \varphi} $}{fig:DrehPhi6}
 Koordinaten von P im Hilfskoordinatensystem, dem u,v-System: 
 
 $ \vektor{u\\v} = \underbrace{\vektor{\sin \varphi\\2 - \cos \varphi}}_{\textrm{um } \varphi \textrm{ drehen.}} $
 
-$ \vektor{\cos \varphi, -\sin \varphi\\\sin \varphi, \cos \varphi} \vektor{\sin \varphi\\2-\cos \varphi} $
+$ \vektor{\cos \varphi & -\sin \varphi\\\sin \varphi & \cos \varphi} \vektor{\sin \varphi\\2-\cos \varphi} $
 $=\vektor{\cos \varphi \sin \varphi - 2 \sin \varphi + \sin \varphi \cos \varphi\\\sin \varphi \sin \varphi + 2 \cos \varphi - \cos \varphi \cos \varphi } $
 
 \section{Aufgaben und Wiederholungen}

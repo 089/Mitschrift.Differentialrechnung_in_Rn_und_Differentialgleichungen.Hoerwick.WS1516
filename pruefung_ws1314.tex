@@ -22,21 +22,21 @@ $=\vektor{2x^3y + 2x^2y^2\\2x}$
 
 \textbf{Ableitungsmatrix:}
 $ (g\circ f)' \vektor{x\\y} $
-$=\vektor{6yx^2 + 4xy^2, 2x^3 + 4x^2y\\2, 0}$
+$=\vektor{6yx^2 + 4xy^2 & 2x^3 + 4x^2y\\2 & 0}$
 
 \subsection{zu 2b)}
 $f'\vektor{x\\y}$
-$=\vektor{1,1\\y,x\\2,0}$
+$=\vektor{1 & 1\\y & x\\2 & 0}$
 
 $g'\vektor{x\\y\\z}$
-$=\vektor{yz, xz, xy\\0,0,1}$
+$=\vektor{yz & xz & xy\\0 & 0 & 1}$
 
 $
 (g\circ f)' \vektor{x\\y} 
 =g' \rbr{f \vektor{x\\y}}  \cdot f'\vektor{x\\y}
-=g'\vektor{x+y\\x\cdot y\\2x}  \cdot \vektor{1,1\\y,x\\2,0} 
-=\vektor{2x^2y, 2x^2+2xy,x^2y+y^2x\\0,0,1} \cdot \vektor{1,1\\y,x\\2,0} 
-=...=\vektor{6yx^2 + 4xy^2, 2x^3+4x^2y\\2,0}
+=g'\vektor{x+y\\x\cdot y\\2x}  \cdot \vektor{1 & 1\\y & x\\2 & 0} 
+=\vektor{2x^2y & 2x^2+2xy & x^2y+y^2x\\0 & 0 & 1} \cdot \vektor{1 & 1\\y & x\\2 & 0} 
+=...=\vektor{6yx^2 + 4xy^2 & 2x^3+4x^2y\\2 & 0}
 $\profnote{Matrizenmultiplikation: Zeile mal Spalte!}
 
 \subsection{zu 3a)}

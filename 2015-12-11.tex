@@ -18,14 +18,14 @@ $y_{n+1} = y_n + h (\frac{K_1}{6} + \frac{K_2}{3} + \frac{K_3}{3} + \frac{K_4}{6
 \section{Lineare DGL-Systeme}
 Wir haben eine quadratische Matrix A und einen Vektor b. Die Werte von A sind \underline{Funktionen} von x. 
 
-$A = \vektor{a_{11}, ..., a_{1n}\\\vdots\\a_{n1}, ..., a_{nn}}$,
+$A = \vektor{a_{11} & ... & a_{1n}\\\vdots\\a_{n1} &  ... & a_{nn}}$,
 $a_{i,j} : \begin{cases} \R \rightarrow \R\\x\rightarrow a_{i,j}(x) \end{cases}$
 
 $b=\vektor{b_1\\\vdots\\b_n} b_i : \begin{cases} \R \rightarrow \R\\x\rightarrow b_{i}(x) \end{cases}$
 
 $y' = Ay + b$
 
-$\vektor{y_1'\\\vdots\\y_n'} = \vektor{a_{11}, ..., a_{1n}\\\vdots\\a_{n1}, ..., a_{nn}} \vektor{y_1\\\vdots\\y_n} + \vektor{b_1\\\vdots\\b_n} \Rightarrow $ lineares DGL-System
+$\vektor{y_1'\\\vdots\\y_n'} = \vektor{a_{11} &  ... &  a_{1n}\\\vdots\\a_{n1} &  ... &  a_{nn}} \vektor{y_1\\\vdots\\y_n} + \vektor{b_1\\\vdots\\b_n} \Rightarrow $ lineares DGL-System
 
 \textbf{Lösung:} $\varphi: \R \rightarrow \R^n$,
 $ \varphi = \vektor{\varphi_1\\\vdots\\\varphi_n}$,
@@ -83,7 +83,7 @@ $ y_1' = -\omega y_2, \omega \in \R$
 $ y_1' = \omega y_1$
 
 $\vektor{y_1'\\y_2'}$
-$=\vektor{0, -\omega\\\omega,0} \vektor{y_1\\y_2}$
+$=\vektor{0 &  -\omega\\\omega & 0} \vektor{y_1\\y_2}$
 
 $y' = A\cdot y$
 
@@ -95,7 +95,7 @@ $\varphi_2(x) = \vektor{-\sin \omega x\\\cos \omega x}$ sind 2 linear unabhängi
 $\varphi_1'(x) = \vektor{-\omega \sin \omega x\\\omega \cos \omega x} \checkmark$
 
 $A \cdot \varphi_1 $
-$=\vektor{0, -\omega\\\omega,0} \vektor{\cos \omega x\\\sin \omega x} $
+$=\vektor{0 & -\omega\\\omega & 0} \vektor{\cos \omega x\\\sin \omega x} $
 $=\vektor{-\omega \sin \omega x\\\omega \cos \omega x} \checkmark$
 
 analog $\varphi_2$

@@ -31,12 +31,12 @@ $f : \R^3 \rightarrow \R^3$
 $\vektor{x_1\\x_2\\x_3} \rightarrow \vektor{x_1 \cdot x_2^2\\ x_2 \cdot x_3 \\ x_1^2 \cdot x_2 \cdot x_3}$
 
 Ableitungsmatrix: 
-$\vektor{x_2^2, 2x_1 x_2, 0\\ 0, x_3, x_2\\2 x_1 x_2 x_3, x_1^2 x_3, x_1^2 x_2}$
+$\vektor{x_2^2 & 2x_1 x_2 & 0\\ 0 & x_3 & x_2\\2 x_1 x_2 x_3 & x_1^2 x_3 & x_1^2 x_2}$
 
 Linearisierung: 
 $f \vektor{x_1 + \Dx_1\\ x_2 + \Dx_2\\ x_3 + \Dx_3}$
 $\approx f\vektor{x_1\\ x_2 \\ x_3	}$
-$+\vektor{x_2^2, 2x_1 x_2, 0\\ 0, x_3, x_2\\2 x_1 x_2 x_3, x_1^2 x_3, x_1^2 x_2}$
+$+\vektor{x_2^2 & 2x_1 x_2 & 0\\ 0 & x_3 & x_2\\2 x_1 x_2 x_3 & x_1^2 x_3 & x_1^2 x_2}$
 $\vektor{\Dx_1\\ \Dx_2\\ \Dx_3}$
 
 \subsection{Kettenregel}
@@ -63,23 +63,23 @@ $= g\vektor{x_1 x_2 \\ x_1^2}$
 $= \vektor{2 x_1^2\\ 3 x_1^3 x_2}$
 
 $(g\circ f)'\vektor{x_1 \\ x_2}$
-$= \vektor{4 x_1, 0\\ 9 x_1^2 x_2, 3 x_1^3}$
+$= \vektor{4 x_1 & 0\\ 9 x_1^2 x_2 & 3 x_1^3}$
 
 Mit der Kettenregel: 
 $f'\vektor{x_1 \\ x_2} $
-$=\vektor{x_2, x_1\\ 2 x_1, 0}$,
+$=\vektor{x_2 & x_1\\ 2 x_1 & 0}$,
 $g'\vektor{x_1 \\ x_2}$
-$=\vektor{0, 2\\3 x_2, 3_x1}$
+$=\vektor{0 & 2\\3 x_2 & 3_x1}$
 
 $g'(f(x)) $
 $= g' \vektor{x_1 x_2 \\ x_1^2}$
-$= \vektor{0, 2 \\ 3 x_1^2, 3 x_1 x_2}$
+$= \vektor{0 & 2 \\ 3 x_1^2 & 3 x_1 x_2}$
 
 $g'(f(x)) \cdot f'(x) $
-$=\vektor{0, 2 \\ 3 x_1^2, 3 x_1 x_2}$
-$\cdot \vektor{x_2, x_1 \\ 2 x_1, 0}$
-$= \vektor{4 x_1, 0 \\ 3 x_1^2 x_2 + 6 x_1^2 x_2, 3 x_1^3}$
-$=\vektor{4 x_1, 0 \\ 9 x_1^2 x_2, 3 x_1^3}$
+$=\vektor{0 & 2 \\ 3 x_1^2 & 3 x_1 x_2}$
+$\cdot \vektor{x_2 & x_1 \\ 2 x_1 & 0}$
+$= \vektor{4 x_1 & 0 \\ 3 x_1^2 x_2 + 6 x_1^2 x_2 & 3 x_1^3}$
+$=\vektor{4 x_1 & 0 \\ 9 x_1^2 x_2 & 3 x_1^3}$
 
 \subsection{Hausaufgabe}
 $ f: \R \rightarrow \R^2, x \rightarrow \vektor{x \\ \cos x}$, 

@@ -6,7 +6,7 @@ $y_1' = -y_2$
 
 $y_2' = y_1 + x$
 
-$\vektor{y_1'\\y_2'} = \vektor{0, -1\\1,0} \vektor{y_1\\y_2} + \vektor{0\\x}$
+$\vektor{y_1'\\y_2'} = \vektor{0 &  -1\\1 & 0} \vektor{y_1\\y_2} + \vektor{0\\x}$
 
 $y' = A\cdot y + b$
 
@@ -20,15 +20,15 @@ $\varphi_1'(x) = \vektor{-\sin x\\\cos x}, A_{\varphi_1} = \vektor{0,-1\\1,0} \v
 
 $\varphi_1, \varphi_2$ sind linear unabhängig, bilden also ein Fundamentalsystem.\index{Fundamentalsystem}
 
-$\Phi(x) = \vektor{\cos x, -\sin x\\\sin x, \cos x}$. Was ist $\Phi^{-1}$? $\Phi$ ist orthogonal! 
-$\Rightarrow \Phi^{-1} = \Phi^t = \vektor{\cos x, \sin x\\-\sin x, \cos x}$
-$\Rightarrow u(x) = \int_{x_0}^{x} \vektor{\cos t, \sin t\\-\sin t, \cos t} \vektor{0\\t} dt + \vektor{c_1\\c_2}$
+$\Phi(x) = \vektor{\cos x &  -\sin x\\\sin x &  \cos x}$. Was ist $\Phi^{-1}$? $\Phi$ ist orthogonal! 
+$\Rightarrow \Phi^{-1} = \Phi^t = \vektor{\cos x &  \sin x\\-\sin x &  \cos x}$
+$\Rightarrow u(x) = \int_{x_0}^{x} \vektor{\cos t & \sin t\\-\sin t &  \cos t} \vektor{0\\t} dt + \vektor{c_1\\c_2}$
 $=\vektor{\int_{x_0}^{x} t \sin t dt + c_1\\\int_{x_0}^{x} t \cos t dt + c_2}$
 $=\vektor{\sin x - x \cos x + d_1\\\cos x + x \sin x + d_2}$ \profnote{Die beiden Konstanten fassen wir zusammen: $d_1, d_2$}
 
 Wähle ohne die Konstanten $u(x) = \vektor{\sin x - x \cos x\\\cos x + x \sin x}$
 $\Rightarrow \Psi(x) = \Phi \cdot u$
-$=\vektor{\cos x, -\sin x\\\sin x, \cos x} \cdot \vektor{\sin x - x \cos x\\\cos x + x \sin x}$
+$=\vektor{\cos x & -\sin x\\\sin x & \cos x} \cdot \vektor{\sin x - x \cos x\\\cos x + x \sin x}$
 $=...=\vektor{-x\\1} = \Psi(x)$\\
 
 \textbf{Alle Lösungen:}\\
